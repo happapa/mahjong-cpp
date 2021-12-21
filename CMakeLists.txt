@@ -42,7 +42,7 @@ include_directories(${rapidjson_SOURCE_DIR}/include)
 # spdlog
 FetchContent_Declare(
   spdlog
-  GIT_REPOSITORY https://github.com/gabime/spdlog.git
+  GIT_REPOSITORY https://github.com/happapa/spdlog.git
   GIT_TAG v1.x)
 FetchContent_GetProperties(spdlog)
 if(NOT spdlog_POPULATED)
@@ -54,13 +54,13 @@ endif()
 include_directories(src)
 
 # サーバー
-option(BUILD_SERVER "build server programs." ON)
+option(BUILD_SERVER "build server programs." OFF)
 if(BUILD_SERVER)
   add_subdirectory(src/server)
 endif()
 
 # テスト
-option(BUILD_TEST "build test programs." ON)
+option(BUILD_TEST "build test programs." OFF)
 if(BUILD_TEST)
   add_subdirectory(src/test)
 endif()
