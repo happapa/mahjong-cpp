@@ -80,7 +80,7 @@ std::string Server::process_request(const std::string &json)
     }
 
     std::string schema_path =
-        (boost::dll::program_location().parent_path() / "request_schema.json").string();
+        (boost::dll::this_line_location().parent_path() / "request_schema.json").string();
     std::ifstream ifs(schema_path);
     rapidjson::IStreamWrapper isw(ifs);
     rapidjson::Document sd;
@@ -162,7 +162,7 @@ std::string Server::process_request(const std::string &json)
 #ifdef OUTPUT_DETAIL_LOG
     {
         boost::filesystem::path save_dir =
-            boost::dll::program_location().parent_path() / "requests";
+            boost::dll::this_line_location().parent_path() / "requests";
         if (!boost::filesystem::exists(save_dir))
             boost::filesystem::create_directory(save_dir);
         std::string req_save_path = save_dir.string() + "\\" + (req.hand.to_string() + ".json");
@@ -174,7 +174,7 @@ std::string Server::process_request(const std::string &json)
 
     {
         boost::filesystem::path save_dir =
-            boost::dll::program_location().parent_path() / "response";
+            boost::dll::this_line_location().parent_path() / "response";
         if (!boost::filesystem::exists(save_dir))
             boost::filesystem::create_directory(save_dir);
         std::string req_save_path = save_dir.string() + "\\" + (req.hand.to_string() + ".json");

@@ -168,7 +168,7 @@ bool NaiveExpectedValueCalculator::make_uradora_table()
 
     uradora_prob_table_.resize(6);
 
-    boost::filesystem::path path = boost::dll::program_location().parent_path() / "uradora.txt";
+    boost::filesystem::path path = boost::dll::this_line_location().parent_path() / "uradora.txt";
     std::ifstream ifs(path.string());
 
     std::string line;
