@@ -12,5 +12,7 @@ foreach(ENTRY_FILE ${ENTRY_FILES})
                      ${CMAKE_SOURCE_DIR}/data/config/ $<TARGET_FILE_DIR:${BASE_NAME}>)
 endforeach(ENTRY_FILE ${ENTRY_FILES})
 
-add_library(mjtools SHARED ${SRC_FILES} mj.cpp)
+add_library(mjtools SHARED ${SRC_FILES} mj.cpp sotest.py)
 target_link_libraries(mjtools ${Boost_LIBRARIES} spdlog ${CMAKE_DL_LIBS})
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/sotest.py
+     DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
