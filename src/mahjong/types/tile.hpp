@@ -56,19 +56,19 @@ struct Tile
     };
 
     static inline const std::map<int, std::string> Name = {
-        {Null, "Null"},          {Manzu1, "一萬"},      {Manzu2, "二萬"},
-        {Manzu3, "三萬"},        {Manzu4, "四萬"},      {Manzu5, "五萬"},
-        {Manzu6, "六萬"},        {Manzu7, "七萬"},      {Manzu8, "八萬"},
-        {Manzu9, "九萬"},        {Pinzu1, "一筒"},      {Pinzu2, "二筒"},
-        {Pinzu3, "三筒"},        {Pinzu4, "四筒"},      {Pinzu5, "五筒"},
-        {Pinzu6, "六筒"},        {Pinzu7, "七筒"},      {Pinzu8, "八筒"},
-        {Pinzu9, "九筒"},        {Sozu1, "一索"},       {Sozu2, "二索"},
-        {Sozu3, "三索"},         {Sozu4, "四索"},       {Sozu5, "五索"},
-        {Sozu6, "六索"},         {Sozu7, "七索"},       {Sozu8, "八索"},
-        {Sozu9, "九索"},         {Ton, u8"東"},         {Nan, u8"南"},
-        {Sya, u8"西"},           {Pe, u8"北"},          {Haku, u8"白"},
-        {Hatu, u8"發"},          {Tyun, u8"中"},        {AkaManzu5, u8"赤五萬"},
-        {AkaPinzu5, u8"赤五筒"}, {AkaSozu5, u8"赤五索"}};
+        {Null, "Null"},          {Manzu1, "1m"},      {Manzu2, "2m"},
+        {Manzu3, "3m"},        {Manzu4, "4m"},      {Manzu5, "5m"},
+        {Manzu6, "6m"},        {Manzu7, "7m"},      {Manzu8, "8m"},
+        {Manzu9, "9m"},        {Pinzu1, "1p"},      {Pinzu2, "2p"},
+        {Pinzu3, "3p"},        {Pinzu4, "4p"},      {Pinzu5, "5p"},
+        {Pinzu6, "6p"},        {Pinzu7, "7p"},      {Pinzu8, "8p"},
+        {Pinzu9, "9p"},        {Sozu1, "1s"},       {Sozu2, "2s"},
+        {Sozu3, "3s"},         {Sozu4, "4s"},       {Sozu5, "5s"},
+        {Sozu6, "6s"},         {Sozu7, "7s"},       {Sozu8, "8s"},
+        {Sozu9, "9s"},         {Ton, "1w"},         {Nan, "2w"},
+        {Sya, "3w"},           {Pe, "4w"},          {Haku, "1d"},
+        {Hatu, "2d"},          {Tyun, "3d"},        {AkaManzu5, "r5m"},
+        {AkaPinzu5, "r5p"}, {AkaSozu5, "r5s"}};
 };
 
 /**

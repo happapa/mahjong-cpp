@@ -44,7 +44,7 @@ int main(int, char **)
         //| ExpectedValueCalculator::MaximaizeWinProb // 和了確率を最大化
         ;
     std::vector<int> dora_indicators = {Tile::Ton}; // ドラ表示牌
-    Hand hand = hand5;                              // 手牌
+    Hand hand = hand3;                              // 手牌
 
     ExpectedValueCalculator exp_value_calculator;
     ScoreCalculator score_calculator;
